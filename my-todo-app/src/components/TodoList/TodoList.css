@@ -1,0 +1,106 @@
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+.check-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+.delete-icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 15px;
+}
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+.check-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+}
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+.check-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+.check-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+.check-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+}
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check-icon {
+    color: var(--check-color);
+    transition: color 0.2s ease;
+}
+
+.check-icon:hover {
+    color: #0a520a;
+}
+
+.delete-icon {
+    color: var(--delete-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    border: none;
+}
+
+.delete-icon:hover {
+    color: #771515;
+}
+
+.delete-icon:focus {
+    outline: none;
+}

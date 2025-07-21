@@ -1,0 +1,96 @@
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+.custom-select-trigger {
+    padding: 9.5px;
+    font-size: 16px;
+}
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+.custom-select-trigger {
+    padding: 15px;
+}
+}
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+.custom-select-trigger {
+    padding: 15px;
+}
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+.custom-select-trigger {
+    padding: 15px;
+}
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+.custom-select-trigger {
+    padding: 15px;
+}
+}
+.custom-select {
+    position: relative;
+    flex: 0 1 35%;
+}
+
+.custom-select-trigger {
+    height: 100%;
+    background-color: #8bc34a;
+    padding-left: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: background-color 0.2s ease;
+    color: white;
+    font-weight: 500;
+}
+
+.custom-select-trigger:hover {
+    background-color: #7aa53a;
+}
+
+.arrow {
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+.custom-select.open .arrow {
+    transform: rotate(180deg);
+}
+
+.custom-options {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-option {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.custom-option:hover {
+    background-color: #f0f0f0;
+}
+
+.custom-option.selected {
+    background-color: #e0f0c9;
+    font-weight: bold;
+}

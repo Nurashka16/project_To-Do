@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "mobx": "^6.13.7",
+    "mobx-react-lite": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "ts-jest": "^29.4.0"
+  },
+
+"scripts": {
+  "dev": "vite",
+  "test": "jest",
+  "test:watch": "jest --watch"
+}
+}

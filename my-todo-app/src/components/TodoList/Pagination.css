@@ -1,0 +1,79 @@
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+    .pagination {
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .page {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pagination {
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .page {
+        width: 33px;
+        height: 33px;
+        font-size: 16px;
+    }
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px)and (max-width: 1439px) {
+    .pagination {
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .page {
+        width: 33px;
+        height: 33px;
+        font-size: 16px;
+    }
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+    .pagination {
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .page {
+        width: 33px;
+        height: 33px;
+        font-size: 16px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    border-radius: 50%;
+    background-color: var(--page-bg);
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.page:hover:not([disabled]) {
+    background-color: var(--page-hover);
+}
+
+.page.active {
+    background-color: var(--page-active);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,138 @@
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+    .input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .add-button {
+        right: 10px;
+        top: 10px;
+    }
+
+    .add-button svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .todo-header {
+        width: 100%;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .input {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .add-button {
+        right: 10px;
+        top: 13px;
+    }
+
+    .add-button svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .todo-header {
+        width: 85%;
+    }
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+    .input {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .add-button {
+        right: 10px;
+        top: 13px;
+    }
+
+    .add-button svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .todo-header {
+        width: 85%;
+    }
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+    .input {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .add-button {
+        right: 10px;
+        top: 13px;
+    }
+
+    .add-button svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .todo-header {
+        width: 85%;
+    }
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 4.5%;
+}
+
+.form {
+    position: relative;
+    flex: 1;
+}
+
+.input {
+    width: 100%;
+    color: black;
+    border-radius: 7px;
+    border: 1.5px solid var(--task-border);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    padding-right: 60px;
+}
+
+.input:focus {
+    border-color: var(--check-color);
+    box-shadow: 0 0 0 1px rgba(140, 198, 63, 0.4);
+    box-shadow: inset;
+}
+
+.add-button {
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.add-button svg {
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #8bc34a;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover svg {
+    background-color: #556b2f;
+}

@@ -1,0 +1,159 @@
+/* Маленькие экраны */
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+
+  #root {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .theme-button {
+    top: -60px;
+    right: 0px;
+  }
+
+  .app-container {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+
+  #root {
+    padding: 5rem 2rem 2rem;
+  }
+
+  .theme-button {
+    top: -60px;
+    right: 0px;
+  }
+
+  .app-container {
+    gap: 18px;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    width: 97%;
+  }
+
+  #root {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .theme-button {
+    top: -60px;
+    right: 0px;
+  }
+
+  .app-container {
+    gap: 24px;
+  }
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+  .content {
+    width: 85%;
+  }
+
+  #root {
+    padding: 7rem 2rem 2rem;
+  }
+
+  .theme-button {
+    top: -60px;
+    right: -10px;
+  }
+
+  .app-container {
+    gap: 24px;
+  }
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+  .content {
+    width: 85%;
+
+  }
+
+  #root {
+    padding: 7rem 2rem 2rem;
+  }
+
+  .theme-button {
+    top: -60px;
+    right: -25px;
+  }
+
+  .app-container {
+    gap: 24px;
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  position: relative;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-button {
+  position: absolute;
+  z-index: 10;
+}
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+
+}

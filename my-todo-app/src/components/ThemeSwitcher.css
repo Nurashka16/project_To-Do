@@ -1,0 +1,225 @@
+/* Мобильные телефоны */
+@media (max-width: 767px) {
+    .theme-switcher {
+        height: 35px;
+        width: 70px;
+    }
+
+    .slider:before {
+        height: 23px;
+        width: 23px;
+        left: 3px;
+        bottom: 5px;
+    }
+
+    .icon {
+        width: 21px;
+        height: 21px;
+    }
+
+    .theme-light {
+        top: -2.5px;
+        left: 51%;
+    }
+
+    .theme-dark {
+        top: -4px;
+        right: -33%;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .theme-switcher {
+        height: 40px;
+        width: 80px;
+    }
+
+    .slider:before {
+        height: 28.5px;
+        width: 28.5px;
+        left: 6px;
+        bottom: 4.5px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .theme-light {
+        top: 0%;
+        left: 51%;
+    }
+
+    .theme-dark {
+        top: 2%;
+        right: -33%;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .theme-switcher {
+        height: 40px;
+        width: 80px;
+    }
+
+    .slider:before {
+        height: 28.5px;
+        width: 28.5px;
+        left: 6px;
+        bottom: 4.5px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .theme-light {
+        top: 0%;
+        left: 51%;
+    }
+
+    .theme-dark {
+        top: 2%;
+        right: -33%;
+    }
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1024px) {
+    .theme-switcher {
+        height: 40px;
+        width: 80px;
+    }
+
+    .slider:before {
+        height: 28.5px;
+        width: 28.5px;
+        left: 6px;
+        bottom: 4.5px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .theme-light {
+        top: 0%;
+        left: 51%;
+    }
+
+    .theme-dark {
+        top: 2%;
+        right: -33%;
+    }
+}
+
+/* Очень большие экраны */
+@media (min-width: 1440px) {
+    .theme-switcher {
+        height: 40px;
+        width: 80px;
+    }
+
+    .slider:before {
+        height: 27px;
+        width: 27px;
+        left: 6px;
+        bottom: 6px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .theme-light {
+        top: 0%;
+        left: 51%;
+    }
+
+    .theme-dark {
+        top: 2%;
+        right: -33%;
+    }
+}
+
+.theme-switcher {
+    display: inline-block;
+
+}
+
+.theme-switcher input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #8bc34a;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    background-color: #8bc34a;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #3c3e41;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #000000;
+}
+
+input:checked+.slider:before {
+    transform: translateX(37px);
+}
+
+/* Иконки */
+.icons {
+    position: relative;
+    transform: translate(-40%, -40%);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    position: absolute;
+    transition: 0.4s;
+}
+
+.theme-light {}
+
+.theme-dark {
+    color: rgb(121, 108, 108);
+    width: 22px;
+    height: 22px;
+}
+
+input:checked~.icons .icon:first-child {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:checked~.icons .icon:last-child {
+    color: white;
+}

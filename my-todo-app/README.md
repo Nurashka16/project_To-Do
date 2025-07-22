@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# Todo App
+Простое и красивое приложение для управления задачами, создан с использованием современных технологий.  
+Макет: [Ссылка на макет](https://www.dropbox.com/scl/fi/gt739pzayd1qenkanl8ob/todo.png?rlkey=fpomv7cgkts9lz8xatpl4i2of&st=3bwcfuw0&dl=0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Особенности
+Добавление и удаление задач  
+Отметка выполнения (галочка)  
+Фильтрация: все / активные / завершённые  
+Пагинация (по 7 задач на странице)  
+Темная и светлая тема  
+Сохранение данных в `localStorage`  
+Адаптивный дизайн — отлично выглядит на мобильных, планшетах и десктопах  
+Написано на TypeScript — типизация везде  
+Используется MobX для управления состоянием  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Как запустить проект
+1. Клонируем репозиторий
+2. Переходим в папку проекта: cd todo-app
+3. Установливаем зависимости: npm install
+4. Запускаем сервер разработки: npm run dev
 
-## Expanding the ESLint configuration
+## Стек технологий
+React — интерфейс
+TypeScript — статическая типизация
+MobX — управление состоянием
+CSS — кастомные стили без сторонних библиотек
+localStorage — сохранение данных между сессиями
+Responsive Design — поддержка всех устройств
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Тестирование
+Проект покрыт юнит-тестами с использованием **Jest**
+Запустите тесты: npx jest src/stores/__tests__/todoStore.test.ts
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Архитектура проекта
+my-todo-app/
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── App.css
+│   │   │   ├── reset.css
+│   │   │   └── variables.css
+│   ├── components/
+│   │   ├── Header/
+│   │   │   ├── TodoFilter/
+│   │   │   │   ├── TodoFilter.tsx
+│   │   │   │   └── TodoFilter.css
+│   │   │   ├── Header.tsx
+│   │   │   └── Header.css
+│   │   ├── Pagination/
+│   │   │   ├── Pagination.tsx
+│   │   │   └── Pagination.css
+│   │   ├── ThemeSwitcher/
+│   │   │   ├── ThemeSwitcher.tsx
+│   │   │   └── ThemeSwitcher.css
+│   │   └── TodoList/
+│   │       ├── TodoItem/
+│   │       │   ├── TodoItem.tsx
+│   │       │   └── TodoItem.css
+│   │       ├── TodoList.tsx
+│   │       └── TodoList.css
+│   ├── context/
+│   │   └── ThemeContext.tsx
+│   ├── hooks/
+│   │   └── useTheme.ts
+│   ├── stores/
+│   │   ├── todoStore.ts
+│   │   └── __tests__/
+│   │       └── todoStore.test.ts
+│   ├── types/
+│   │   ├── filterOptions.ts
+│   │   └── task.ts
+│   ├── App.tsx
+│   └── main.tsx
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Обратная связь: tilepovanura@gmail.com
+Создано с ❤️ — Tilepova Nuraiym

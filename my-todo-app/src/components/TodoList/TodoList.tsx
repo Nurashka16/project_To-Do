@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import "./TodoList.css";
 import { useTheme } from "../../hooks/useTheme";
 import TodoItem from "./TodoItem";
-import Pagination from "./Pagination";
+import Pagination from "../Pagination/Pagination";
 import { Task } from "../../types/task";
 import { FilterType } from "../../types/filterOptions";
 import { store } from "../../stores/todoStore";

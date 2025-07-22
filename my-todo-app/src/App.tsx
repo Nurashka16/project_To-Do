@@ -4,7 +4,7 @@ import { Header } from "./components/Header/Header";
 import "./App.css";
 import './assets/css/reset.css';
 import './assets/css/variables.css';
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 import { TaskList } from "./components/TodoList/TodoList";
 import { FilterType } from "./types/filterOptions";
 

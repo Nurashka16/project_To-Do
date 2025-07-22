@@ -6,7 +6,7 @@ describe("TodoStore", () => {
     beforeEach(() => {
         localStorage.clear();
         store = new TodoStore();
-        store.loadFromLocalStorage = () => {}; // отключаем загрузку
+        store.loadFromLocalStorage = () => { }; // отключаем загрузку
     });
 
     test("addTodo добавляет новую задачу", () => {

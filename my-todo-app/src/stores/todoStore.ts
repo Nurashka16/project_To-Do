@@ -3,7 +3,7 @@ import { Task } from "../types/task";
 
 
 
-class TodoStore {
+export class TodoStore {
     todos: Task[] = [
         { id: 1, value: "Создать задачу", completed: false },
         { id: 2, value: "Удалить задачу", completed: false },

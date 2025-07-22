@@ -1,8 +1,8 @@
-#Todo App
+# Todo App
 Простое и красивое приложение для управления задачами, создан с использованием современных технологий.  
-Макет: https://www.dropbox.com/scl/fi/gt739pzayd1qenkanl8ob/todo.png?rlkey=fpomv7cgkts9lz8xatpl4i2of&st=3bwcfuw0&dl=0
+Макет: [Ссылка на макет](https://www.dropbox.com/scl/fi/gt739pzayd1qenkanl8ob/todo.png?rlkey=fpomv7cgkts9lz8xatpl4i2of&st=3bwcfuw0&dl=0)
 
-##Особенности
+## Особенности
 Добавление и удаление задач  
 Отметка выполнения (галочка)  
 Фильтрация: все / активные / завершённые  
@@ -34,13 +34,17 @@ Responsive Design — поддержка всех устройств
 Запустите тесты: npx jest src/stores/__tests__/todoStore.test.ts
 
 ## Архитектура проекта
+```
 my-todo-app/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
 ├── src/
 │   ├── assets/
-│   │   ├── css/
-│   │   │   ├── App.css
-│   │   │   ├── reset.css
-│   │   │   └── variables.css
+│   │   └── css/
+│   │       ├── reset.css
+│   │       ├── variables.css
+│   │       └── App.css
 │   ├── components/
 │   │   ├── Header/
 │   │   │   ├── TodoFilter/
@@ -73,6 +77,6 @@ my-todo-app/
 │   │   └── task.ts
 │   ├── App.tsx
 │   └── main.tsx
-
+```
 Обратная связь: tilepovanura@gmail.com
 Создано с ❤️ — Tilepova Nuraiym
